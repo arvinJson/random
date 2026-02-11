@@ -20,7 +20,7 @@ export default function ValentineProposal() {
             <img src="./GoldenRetrieverValentine.png" alt="Valentine" className="w-64 h-64 rounded-3xl shadow-2xl object-cover" />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-red-600 text-center px-4">
-            Would you like to be my valentine?
+            🍒 Would you like to be my valentine? 🍒
           </h1>
         </div>
         
