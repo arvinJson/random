@@ -70,59 +70,59 @@
       }
 
       return (
-        <div className="min-h-screen bg-gradient-to-br from-pink-100 via-red-50 to-pink-200 flex items-center justify-between p-8">
-          {/* Left Image */}
-          <div className="hidden md:block w-48 lg:w-64 flex-shrink-0">
-            <img src="./yay-meme.png" alt="Left decoration" className="w-full h-auto rounded-3xl shadow-2xl object-cover" />
-          </div>
-
-          {/* Center Content */}
-          <div className="flex-1 flex flex-col items-center justify-between px-4 md:px-8 min-h-screen py-8">
-            <div className="flex-1 flex flex-col items-center justify-center gap-6">
+        <div className="min-h-screen bg-gradient-to-br from-pink-100 via-red-50 to-pink-200 flex flex-col items-center justify-between p-8">
+          <div className="flex-1 flex flex-col items-center justify-center gap-6">
+            {/* Question with images on left and right */}
+            <div className="flex items-center justify-center gap-6">
+              {/* Left Image */}
+              <div className="hidden md:block w-32 h-32 lg:w-40 lg:h-40 flex-shrink-0">
+                <img src="./yay-meme.png" alt="Left decoration" className="w-full h-full rounded-3xl shadow-2xl object-cover" />
+              </div>
+              
               <h2 className="text-3xl md:text-4xl font-bold text-red-600 text-center px-4">
                 What should we do for our date?
               </h2>
-            </div>
-            
-            <div className="w-full max-w-3xl grid grid-cols-2 gap-4 pb-8">
-              <button
-                onClick={() => handleActivitySelect('two')}
-                className={`${
-                  selectedActivity === 'two' ? 'bg-pink-600' : 'bg-red-500 hover:bg-red-600'
-                } text-white text-xl font-bold py-20 rounded-2xl shadow-lg transform transition hover:scale-105`}
-              >
-                A. It takes two
-              </button>
-              <button
-                onClick={() => handleActivitySelect('yoga')}
-                className={`${
-                  selectedActivity === 'yoga' ? 'bg-pink-600' : 'bg-red-500 hover:bg-red-600'
-                } text-white text-xl font-bold py-20 rounded-2xl shadow-lg transform transition hover:scale-105`}
-              >
-                B. Puppy Yoga
-              </button>
-              <button
-                onClick={() => handleActivitySelect('pizza')}
-                className={`${
-                  selectedActivity === 'pizza' ? 'bg-pink-600' : 'bg-red-500 hover:bg-red-600'
-                } text-white text-xl font-bold py-20 rounded-2xl shadow-lg transform transition hover:scale-105`}
-              >
-                C. Making heart-shaped pizzas
-              </button>
-              <button
-                onClick={() => handleActivitySelect('surprise')}
-                className={`${
-                  selectedActivity === 'surprise' ? 'bg-pink-600' : 'bg-red-500 hover:bg-red-600'
-                } text-white text-xl font-bold py-20 rounded-2xl shadow-lg transform transition hover:scale-105`}
-              >
-                <span className="text-4xl">D. 😏</span>
-              </button>
+              
+              {/* Right Image */}
+              <div className="hidden md:block w-32 h-32 lg:w-40 lg:h-40 flex-shrink-0">
+                <img src="./yay-meme.png" alt="Right decoration" className="w-full h-full rounded-3xl shadow-2xl object-cover" />
+              </div>
             </div>
           </div>
-
-          {/* Right Image */}
-          <div className="hidden md:block w-48 lg:w-64 flex-shrink-0">
-            <img src="./yay-meme.png" alt="Right decoration" className="w-full h-auto rounded-3xl shadow-2xl object-cover" />
+          
+          <div className="w-full max-w-4xl grid grid-cols-2 gap-4 pb-8">
+            <button
+              onClick={() => handleActivitySelect('two')}
+              className={`${
+                selectedActivity === 'two' ? 'bg-pink-600' : 'bg-red-500 hover:bg-red-600'
+              } text-white text-xl font-bold py-20 rounded-2xl shadow-lg transform transition hover:scale-105`}
+            >
+              A. It takes two
+            </button>
+            <button
+              onClick={() => handleActivitySelect('yoga')}
+              className={`${
+                selectedActivity === 'yoga' ? 'bg-pink-600' : 'bg-red-500 hover:bg-red-600'
+              } text-white text-xl font-bold py-20 rounded-2xl shadow-lg transform transition hover:scale-105`}
+            >
+              B. Puppy Yoga
+            </button>
+            <button
+              onClick={() => handleActivitySelect('pizza')}
+              className={`${
+                selectedActivity === 'pizza' ? 'bg-pink-600' : 'bg-red-500 hover:bg-red-600'
+              } text-white text-xl font-bold py-20 rounded-2xl shadow-lg transform transition hover:scale-105`}
+            >
+              C. Making heart-shaped pizzas
+            </button>
+            <button
+              onClick={() => handleActivitySelect('surprise')}
+              className={`${
+                selectedActivity === 'surprise' ? 'bg-pink-600' : 'bg-red-500 hover:bg-red-600'
+              } text-white text-xl font-bold py-20 rounded-2xl shadow-lg transform transition hover:scale-105`}
+            >
+              <span className="text-4xl">D. 😏</span>
+            </button>
           </div>
         </div>
       );
